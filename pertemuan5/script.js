@@ -47,6 +47,28 @@ $(document).ready(function(){
         $('#div2').fadeToggle("slow");
         $('#div3').fadeToggle(3000);
     })
+
+    $('#submit').click(function(){
+        let nama = $('#Name').val();
+        $('p').text(nama);
+    })
+
+    $('#mati').hide()
+
+
+    $('#btnmatinyala').click(function(){
+        $('#mati').hide()
+        $('#hidup').show()
+    })
+
+    $('#btnmatinyala1').click(function(){
+        $('#mati').show()
+        $('#hidup').hide()
+    })
+
+
+
+
     // tex.innerHTML = "Selamat Sore!"
     
 })
